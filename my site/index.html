@@ -1,0 +1,73 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		var imageIndex=1;
+		console.log(imageIndex);
+		function getPreviousImage()
+		{
+			
+			imageIndex=imageIndex-1;
+			document.getElementById('button2').style.visibility='visible';
+			if(imageIndex<=1)
+			{
+				document.getElementById('button1').style.visibility='hidden';
+			}	
+			
+			var imgSource="images/image"+imageIndex+".jpg"
+			document.getElementById("imageGallery").src=imgSource;
+    	}	
+    	
+		function getNextImage()
+		{
+			imageIndex = imageIndex + 1;
+			document.getElementById('button1').style.visibility='visible';
+			if(imageIndex>=4)
+			{
+				document.getElementById('button2').style.visibility='hidden';
+			}
+			var imgSource = "images/image"+imageIndex+".jpg"
+			document.getElementById("imageGallery").src=imgSource;
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="maindiv">
+		<div id="imagediv">
+			<img  id="imageGallery" src="images/image1.jpg" alt="image1" align="center" />
+			<div id="buttondiv">
+				<input type="button" id="button1"  class="left" value="Previous" onclick="getPreviousImage()" style="visibility:hidden;" /> 
+				<input type="button" id="button2" class="right" value="Next" onclick="getNextImage()" />
+            </div>
+        </div>
+	   <div id="leftdiv">
+           <hr align=left>
+           <br><br>
+           <h1 id="name">
+			   <span style="color:#D1B894; font-size:4.5vw;font-family:fantasy; letter-spacing:-7px;">PRA</span>
+			   <span style="color:black; font-size:4.5vw;font-family:fantasy; letter-spacing:-7px;">TS</span>
+			</h1>
+            <br><br><br><br><br>
+            <a href="genix.html" style="color:#D1B894;"class="list"><b>HOME</b></a><br><br>
+            <a href="xyz.com" class="list"><b>ABOUT</b></a><br><br>
+            <a href="xyz.com" class="list"><b>PORTFOLIO</b></a><br><br>
+            <a href="xyz.com" class="list"><b>BLOG</b></a><br><br>
+            <a href="xyz.com" class="list"><b>CONTACT</b></a><br><br>
+            <br><br><br><br><br>
+            <a href="abc.xyz" alt="facebook" class="icons"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="abc.xyz" alt="twitter"class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="abc.xyz" alt="wifi"class="icons"><i class="fa fa-rss" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="abc.xyz" alt="google+"class="icons"><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="abc.xyz" alt="linked-in" class="icons"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <br><br><br>
+            <i class="fa fa-copyright" aria-hidden="true"></i> 
+            <span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
+				2018. Prats. All rights reserved.<br>Template by Pratiksha.
+			</span>
+       </div>
+    </div>
+</body>
+</html>

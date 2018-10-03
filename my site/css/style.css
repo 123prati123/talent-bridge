@@ -1,0 +1,58 @@
+
+a:link.list{
+	color: 	#787878;
+	text-decoration:none;
+	font-size:12px;
+	font-family:fantasy;
+}
+a:active.list{
+	color:#D1B894;
+	text-decoration:none;
+}
+
+i{
+	color:#505050;
+}
+
+hr{
+    width:60px; 
+    color:FFCC66;
+}
+a.icons{
+	color:#404040;
+}
+		
+#imageGallery {
+	width:1100px;
+	height:680px;
+	margin-top:30px;
+	margin-left:60px;
+	margin-right:30px;
+}
+#name{
+    word-spacing:-11px;
+    font-strech:condense;
+}
+#maindiv{
+    width:100%;
+ }
+ #imagediv{
+    float:right; 
+    width:1200px;
+}
+#buttondiv{
+    margin-top:20px;
+}
+#leftdiv{
+     float:left;
+     margin-top:24px; 
+     margin-left:30px;
+}
+input.left{
+    float: left; 
+    margin-left:70px;
+}
+input.right{
+    float: right; 
+    margin-right:70px;
+}    
