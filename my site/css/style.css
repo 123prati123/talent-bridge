@@ -9,7 +9,16 @@ a:active.list{
 	color:#D1B894;
 	text-decoration:none;
 }
-
+a:hover.list{
+    color:#D1B894;
+}    
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+}
+#hcolor{
+    color:#D1B894;
+}    
 i{
 	color:#505050;
 }
@@ -21,6 +30,9 @@ hr{
 a.icons{
 	color:#404040;
 }
+a{
+   color: 	#787878;
+} 
 		
 #imageGallery {
 	width:1100px;
@@ -55,4 +67,4 @@ input.left{
 input.right{
     float: right; 
     margin-right:70px;
-}    
+}
