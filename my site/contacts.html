@@ -1,0 +1,161 @@
+<html>
+<head>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="/home/user/projects/my site/css/style.css">
+	 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 
+	 <style>
+		  #map {
+				width: 1100px;
+				height: 500px;
+				background-color: grey;
+				margin-right:30px;
+				margin-top:30px;
+		        }
+		  .right {
+				position: right;
+				overflow-y: scroll;
+		        }
+		  fieldset {
+				border: 0;
+		        }
+          input[type="text"] {
+			   font-family: fantasy;
+			   width: 310px;
+			   height: 40px;
+			   font-size: 12px;
+			   color: #787878;
+			   border: 1px solid #D0D0D0;
+			   padding-left:15px;
+               }
+         input[type="email"] {
+			  font-family: fantasy;
+			  width: 310px;
+			  height: 40px;
+			  font-size: 12px;
+			  color: #787878;
+			  border: 1px solid #D0D0D0;
+			  padding-left:15px;
+              }
+        input[type="submit"] {
+			  background-color: white;
+			  color:#D1B894;
+			  text-align: center;
+			  border:2px solid #D1B894;
+			  border:block;
+			  font-size: 14px;
+			  width:150px;
+			  height:40px;
+              }
+        input[type="submit"] :hover{
+			  background-color: #D1B894;
+			  color: white; 
+              }
+    </style>
+    <script>
+	 function initMap() {
+             var uluru = {lat: 12.881899, lng:  77.595666};
+             var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
+             var marker = new google.maps.Marker({position: uluru, map: map});
+             }
+     function validate(myform) {
+	        var name=document.myform.name.value;  
+	        var mail=document.myform.email_address.value;  
+	        var message=document.myform.message.value;  
+	        if (name==null || name==""){  
+                alert("Name can't be blank");  
+                return false;   
+                }
+            else if(mail==null || mail==""){
+		        alert("email can't be blank");  
+                return false;  
+                }
+            else if(message==null || message==""){
+		        alert("message can't be blank");  
+                return false;  
+                }
+        }
+	</script>
+ </head>
+<body>
+	<div class="right" style="float:right; width: 1100px; height: 100%;">
+		<div id="map"  style="float:right;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.401444235693!2d77.59346395046565!3d12.881888220281208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1532058be9a5%3A0xd4fe3a25a455729!2sTalentBridge+Technologies+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1538975674658" 
+					 width=1100px height= 500px frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	 
+		<div style="float:left;">
+		   <form action="abc.com" style="width:54%;" name="myform" onsubmit="return (validate(this))" ,method="post">
+			   <br><br>
+			 <fieldset>
+				 <legend><h2><b><span style="font-family:fantasy; color:#484848;">Say Hello!</span></b></h2></legend>
+				 <input type="text" id="name" name="name" placeholder="Name*">&nbsp;&nbsp;&nbsp;&nbsp;
+				 <input type="email" id="email_address" name="email_address" placeholder="Email*"><br><br>
+				 <input type="text" id="subject" name="subject" style="width:650px;;" placeholder="Subject"><br><br>
+				 <textarea id="message" name="message" placeholder="Message*" style="height:150px; width:650px; padding-top:15px; padding-left:15px;
+					 font-family: fantasy; font-size: 12px; color: #787878; border: 1px solid #D0D0D0;"></textarea><br><br>
+				 <input type="submit" onclick="validate()" value="SUBMIT COMMENT"/>
+			 </fieldset>
+		  </form>
+		</div>
+	 
+		<div style="float:right; width:36%">
+				 <br><br>
+			<h3 style="color:#282828; font-family:fantasy;">About Prats</h3>
+			<span style="color:#888888; font-size:14px; line-height:1.8; font-family:monospace; font-style:Courier New; letter-spacing:0px; word-spacing:-4px;">
+				 Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. In maximus ligula semper metus 
+				 pellentesque<br>mattis. Maecenas volutpat, diam enim sagittis quam,<br> id porta quam. 
+				 <br>
+			</span>
+			<h2 style="color:#282828; font-family:fantasy;">Contact Details
+			</h2>
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<span style="color:#888888; font-size:13px; line-height:1.8; font-family:monospace;
+					 font-style:Courier New;">
+					 HUlimavu gate, banerghatta road
+				</span><br>
+			<i class="fa fa-mobile" aria-hidden="true"></i>
+				<span style="color:#888888; font-size:13px; line-height:1.8; font-family:monospace;
+					 font-style:Courier New;">
+					 +917488376914<br>&nbsp;&nbsp;+917349056067 
+				</span><br>
+			 <i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<span style="color:#888888; font-size:13px; line-height:1.8; font-family:monospace;
+			 font-style:Courier New;">
+				 pratiksha@talentbridge.com <br>&nbsp;&nbsp;pratsingh02@gmail.com 
+				</span>
+		  </div>
+    </div>
+   </div>
+  <div id="leftdiv">
+           <hr align="left" style="width:60px; color:#FFCC66;">
+           <br><br>
+           <h1 id="name" style="word-spacing:-11px; font-strech:condense;">
+			   <span style="color:#D1B894; font-size:4.5vw;font-family:fantasy; letter-spacing:-7px;"><b>PRA</b></span>
+			   <span style="color:black; font-size:4.5vw;font-family:fantasy; letter-spacing:-7px;"><b>TS</b></span>
+			</h1>
+            <br><br><br><br><br>
+            <a href="/home/user/projects/my site/index.html" style="color:#D1B894;"class="list"><b>HOME</b></a><br><br>
+            <a class="list" style="color:#787878;" href=""  onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">
+			    <b>ABOUT</b></a><br><br>
+            <a class="list" style="color:#787878;" href="" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">
+			    <b>PORTFOLIO</b></a><br><br>
+            <a class="list" style="color:#787878;" href="" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">
+				<b>BLOG</b></a><br><br>
+            <a class="list" style="color:#787878;" href="" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">
+				<b>CONTACT</b></a><br><br>
+            <br><br><br><br><br>
+            <a class="icons" href="" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a class="icons" href="" alt="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a class="icons" href="" alt="wifi"><i class="fa fa-rss" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a class="icons" href="" alt="google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+            <a class="icons" href="" alt="linked-in"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <br><br><br>
+            <i class="fa fa-copyright" aria-hidden="true"></i> 
+            <span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
+				2018. Prats. All rights reserved.<br>Template by Pratiksha.
+			</span>
+       </div>
+       </body>
+</html>
+
+	
