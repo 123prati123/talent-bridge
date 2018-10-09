@@ -79,7 +79,9 @@ input.right{
     margin-right:70px;
 }
 
-
+i:hover.icons{
+    color:#D1B894;
+}	
 
 
 carousel-inner > .item > img,
