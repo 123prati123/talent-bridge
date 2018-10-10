@@ -2,26 +2,13 @@
 <head>
 <style>
 
-
-               .container:hover .blocks_on_image
-                {
-                      opacity: 1;
-                 }
-
-                .container:hover .middle
-                 {
-                       opacity: 1;
-		          }
-                .container
-                 {
-                        position: relative;
-                         width: 50%;
-                  }
-
-         .blocks_on_image {
+.blocks_on_image {
+		    opacity: 1;
 		    display: block;
-  width: 100%;
-  height: auto;
+		    
+		    
+		    transition: .5s ease;
+		    backface-visibility: hidden;
                   }
 		 
 		 
@@ -41,45 +28,78 @@
 		   
 		   
 		   img:hover.text_on_image {
-			  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #D1B894;
-}
+			  background-color: green;
+			  color: green;
+			  font-size: 16px;
+			  padding: 16px 32px;
+                    }
 		   
-.container:hover .overlay {
-  opacity: 1;
-}		   
+		   
+		   .container:hover .blocks_on_image {
+                              opacity: 0.3;
+                    }
+
+                   <!--.container:hover .middle {
+                                opacity: 1;-->
+		}
+                  .container {
+                           position: relative;
+                           width: 50%;
+                           }
+                    .container:hover.text_on_image{
+						opacity:0;
+					}
+					.container.text_on_image{
+						opacity:1;
+					}
+						
+					
+		   .text_on_image:hover{
+			   opacity=0.5;
+		   }
+		   .text_on_image{
+			   opacity=0;
+		   }
 
 
 
 
-</style>
-   
+</style></head>
 
 
 
 
-
-</head>
 <body>
 
-<table >
+<table cellspacing="10">
 		      <tr>
 				  
 				  
 				  
 				  
 		      <td>
-				 
-		      <img src="portfolio images/1.jpg" width="350" height="280">
-		     	      
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/1.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>interior/web</i>
+						                          </span></p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
 		      </td>
 		      
 		      
@@ -88,91 +108,33 @@
 		      
 		      
 		      <td>
-		      <img src="portfolio images/2.jpg" width="350" height="280">
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/2.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>photos/branding</i><br>	
+						                          </span></p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
 		      </td>
 		      
 		      
 		      
 		      
-		      
-		      
-		      
-		      
-		      <td>
-		      <img src="portfolio images/3.jpg" width="350" height="280">
-		      </td>
-		      </tr>
-		      <tr>
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-		      <td>
-		      <img src="portfolio images/4.jpg" width="350" height="280">
-		      </td>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      <td>
-		      <img src="portfolio images/5.jpg" width="350" height="280">
-		      </td>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      <td>
-		      <img src="portfolio images/6.jpg" width="350" height="280">
-		      </td>
-		      </tr>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      <tr>
-				  
-				  
-				  
-				  
-				  
-				  
-		      <td>
-		      <img src="portfolio images/7.jpg" width="350" height="280">
-		      </td>
 		      
 		      
 		      
@@ -190,59 +152,94 @@
 		      
 		      
 		      <td>
-		      <img src="portfolio images/8.jpg" width="350" height="280">
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/3.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:120px;"><i>interior</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
 		      </td>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      <td>
-		      <img src="portfolio images/9.jpg" width="350" height="280">
-		      </td>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
 		      
 		      
 		      </tr>
 		      <tr>
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
+		      
+		      
 		      <td>
-		      <img src="portfolio images/10.jpg" width="350" height="280">
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/4.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>branding</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/5.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:135px;"><i>web</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
 		      </td>
 		      
 		      
@@ -255,32 +252,30 @@
 		      
 		      
 		      
-		      
-		      
-		      
-		      
 		      <td>
-		      <img src="portfolio images/1.jpg" width="350" height="280">
-		      </td>
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      
-		      <td>
-		      <img src="portfolio images/11.jpg" width="350" height="280">
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/6.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:120px;"><i>photos</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
 		      </td>
 		      
 		      
@@ -300,6 +295,247 @@
 		      
 		      
 		      </tr>
+		      
+		      <tr>
+		      
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/7.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												 <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>web/photos</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/8.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image" onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>interior/web</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/9.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image"  onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>interior/branding</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      </tr>
+		      
+		      <tr>
+		      
+		      
+		      
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/1.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image"  onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>interior</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/10.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image"  onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:120px;"><i>photos</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      <td>
+				  <div bgcolor="white"  style="background-color:white;">
+				 <div class="container" style="width:355; background-color:#D1B894;">
+					
+						 <img src="portfolio images/11.jpg" class="blocks_on_image" width="355" height="280">
+						 <div class="middle">
+				              <div class="text_on_image" style="margin-left:50px;">
+				                    <table class="text_on_image"  onMouseOver="this.style.opacity=1" onMouseOut="this.style.opacity=0"
+				                    style="border:2px solid white; height:250px; width:310px; margin-right:50; opacity:0;">
+					                     <tr>
+					                         <td>
+												 <p style="line-height: 1.8;">
+												  <span style="font-size:17px; color:white; margin-left:40px; font-family:fantasy;"><b>Designed with passion</b>
+												  </span><br>
+						                          <span style="font-size:14px; color:white; margin-left:100px;"><i>photos/branding</i><br>	
+						                          </span>
+						                          </p>
+					                         </td>
+					                     </tr>
+				                    </table>
+				               </div>
+                            </div>
+                  </div>  
+                  </div>           
+		      </td>
+		      </tr>
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		      
+		     
 		      </table>
 
 
@@ -314,5 +550,31 @@
 
 
 
+</body>
 
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
