@@ -28,6 +28,16 @@
 	.link{
 		text-decoration:none;
 	}
+	a.link:hover{
+		border-bottom: 3px solid #D1B894;
+		padding-bottom:10px;
+	
+	}
+	a:active.link{
+		border-bottom: 3px solid #D1B894;
+		padding-bottom:10px;
+	
+	}
 	
 	</style>
 	
@@ -116,31 +126,33 @@
 				  <tr>
 					  <td>
 						  <span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
-							   <a class="link" id="all" href="#" target="frame" onclick="myFunction1()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">All</a>
-							   &nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;</span></td>
+							   <a class="link" id="all" href="link1.html" target="iframe1" onclick="myFunction1()" 
+							   onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">All</a>
+							   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 							   
 							   
 							  <td> 
 								  <span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
-									  <a class="link" id="interior" href="#" target="frame" onclick="myFunction2()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Interior</a>
+									  <a class="link" id="interior" href="link2.html" target="iframe1" onclick="myFunction2()" 
+									  onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Interior</a>
+							          &nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;</span></td>
+							   
+							   
+							   
+							   <td><span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
+								   <a class="link" id="photos" href="link3.html" target="iframe1" onclick="myFunction3()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Photos</a>
 							   &nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;</span></td>
 							   
 							   
 							   
 							   <td><span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
-								   <a class="link" id="photos" href="#" target="frame" onclick="myFunction3()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Photos</a>
+								   <a class="link" id="branding" href="link4.html" target="iframe1" onclick="myFunction4()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Branding</a>
 							   &nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;</span></td>
 							   
 							   
 							   
 							   <td><span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
-								   <a class="link" id="branding" href="#" target="frame" onclick="myFunction4()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Branding</a>
-							   &nbsp;&nbsp;&nbsp;<span style="font-size:10px;">|</span>&nbsp;&nbsp;&nbsp;</span></td>
-							   
-							   
-							   
-							   <td><span style="color:#888888; font-size:14px; line-height:1.8; font-family:sans-serif;">
-								   <a class="link" id="web" href="#" target="frame"  onclick="myFunction5()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Web</a></span></td>
+								   <a class="link" id="web" href="link5.html" target="iframe1"  onclick="myFunction5()" onMouseOver="this.style.color='#D1B894'"onMouseOut="this.style.color='#787878'">Web</a></span></td>
 						 
 						 
 						 
@@ -151,16 +163,9 @@
 		      
 		      
 		     <div id="frame">
-		      <iframe src="link1.html" id="1" name="link1" width="100%" height="1150px" marginwidth="50px" frameBorder="0" scrolling="no" style="margin-left: 0px;"> 
+		      <iframe src="link1.html" id="1" name="iframe1" width="100%" height="1200px" marginwidth="50px" frameBorder="0" scrolling="no" style="margin-left: 0px;"> 
 		      </iframe>
-		      <iframe src="link2.html" id="2" name="link2" width="100%" height="1400px" marginwidth="50px" frameBorder="0" scrolling="no" style="visibility:hidden;" > 
-		      </iframe>
-		      <iframe src="link3.html" id="3" name="link3" width="100%" height="1400px" marginwidth="50px" frameBorder="0" scrolling="no" style="visibility:hidden;" > 
-		      </iframe>
-		      <iframe src="link4.html" id="4" name="link4" width="100%" height="1400px" marginwidth="50px" frameBorder="0" scrolling="no" style="visibility:hidden;" > 
-		      </iframe>
-		      <iframe src="link5.html" id="5" name="link5" width="100%" height="1400px" marginwidth="50px" frameBorder="0" scrolling="no" style="visibility:hidden;" > 
-		      </iframe>
+		      
 		  </div>
 		  
 		  
