@@ -52,26 +52,22 @@
               }
     </style>
     <script>
-	 function initMap() {
-             var uluru = {lat: 12.881899, lng:  77.595666};
-             var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: uluru});
-             var marker = new google.maps.Marker({position: uluru, map: map});
-             }
+	 
      function validate(myform) {
 	        var name=document.myform.name.value;  
 	        var mail=document.myform.email_address.value;  
 	        var message=document.myform.message.value;  
 	        if (name==null || name==""){  
                 alert("Name can't be blank");  
-                return false;   
+                 exit(0);
                 }
             else if(mail==null || mail==""){
 		        alert("email can't be blank");  
-                return false;  
+                 
                 }
             else if(message==null || message==""){
 		        alert("message can't be blank");  
-                return false;  
+                 
                 }
         }
 	</script>
@@ -80,11 +76,11 @@
 	<div class="right" style="float:right; width: 1100px; height: 100%;">
 		<div id="map"  style="float:right;">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.401444235693!2d77.59346395046565!3d12.881888220281208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1532058be9a5%3A0xd4fe3a25a455729!2sTalentBridge+Technologies+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1538975674658" 
-					 width=1100px height= 500px frameborder="0" style="border:0" allowfullscreen></iframe>
+					 width=1100px height= 500px frameborder="0"  allowfullscreen></iframe>
 		</div>
 	 
 		<div style="float:left;">
-		   <form action="abc.com" style="width:54%;" name="myform" onsubmit="return (validate(this))" ,method="post">
+		   <form action="" style="width:54%;" name="myform" onsubmit="return (validate(this))" ,method="post">
 			   <br><br>
 			 <fieldset>
 				 <legend><h2><b><span style="font-family:fantasy; color:#484848;">Say Hello!</span></b></h2></legend>
